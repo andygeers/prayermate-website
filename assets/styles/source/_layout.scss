@@ -1,0 +1,14 @@
+/* page structure */
+
+.container {
+	@media screen and (min-width: 1400px) {
+		width: 1400px;
+		margin: 0 auto;
+	}
+}
+
+.l-constrained {
+	max-width: 1024px;
+	margin: 0 auto;
+	overflow: auto;
+}

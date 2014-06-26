@@ -1,0 +1,63 @@
+/* =Content
+----------------------------------------------- */
+
+.site-content {
+	margin-top: 5%;
+}
+
+.hero-section {
+	overflow: auto;
+	.hero-img {
+		float: left;
+	}
+	.right-column {
+		float: left;
+		clear: right;
+		width: 53%;
+		margin-left: 8%;
+	}
+	.hero-title {
+		@include font("Merriweather", 3rem, normal);
+	}
+	.hero-desc {
+		@include font("Lato", 1.6rem, 100);
+		font-weight: 100;
+		text-align: justify;
+		width: 95%;
+	}
+	.cta-dl-label {
+		@include font("Lato", 2rem, normal);
+		
+	}
+}
+
+.download-area {
+	margin-top: 20px;
+	.cta-dl-label {
+		display: block;
+	}
+	.google_play_badge img {
+		height: 40px;
+	}
+	.dl-links {
+		margin: 10px 0 0;
+		padding: 0;
+		list-style: none;
+		li {
+			float: left;
+			margin-left: 5%;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+.grey-bg {
+	margin-top: 70px;
+	padding-top: 100px;
+	background: #ececec;
+	.hand-iphone {
+		float: left;
+	}
+}

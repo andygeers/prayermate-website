@@ -1,0 +1,52 @@
+/* =Header
+----------------------------------------------- */
+
+.site-header {
+	background: url(../assets/images/header-bg.png);
+	background-image: linear-gradient(to right, #FFC662 0%, #FFA400 30%);
+	height: 233px;
+	.l-constrained {
+		position: relative;
+		overflow: auto;
+		height: 100%;
+	}
+	.pm-logo {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 0 5%;
+		@media screen and (min-width: 1024px) {
+			padding: 0;
+		}
+	}
+	.nav {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		width: 128px;
+		line-height: 2;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding-right: 5%;
+		box-sizing: content-box;
+		@media screen and (min-width: 1024px) {
+			padding: 0;
+		}
+	}
+	.nav__item {
+		float: left;
+		margin-left: 12px;
+		&:first-child {
+			border-right: solid 1px white;
+			padding-right: 12px;
+			margin-left: 0;
+		}
+		a {
+			color: white;
+			text-decoration: none;
+			text-transform: uppercase;
+			@include font(Lato, 1.6rem, 100)
+		}
+	}
+}

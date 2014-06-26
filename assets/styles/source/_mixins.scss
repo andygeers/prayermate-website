@@ -1,0 +1,34 @@
+$primary: #e62b83;
+
+@mixin vendor($property, $value){
+	-webkit-#{$property}:$value;
+	-moz-#{$property}:$value;
+	#{$property}:$value;
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+
+@mixin font($font-family, $font-size, $font-weight) {
+	@if ($font-family == "Lato") {
+		$font-stack: "Lato", "Helvetica", sans-serif;
+	}
+	@if ($font-family == "Merriweather") {
+		$font-stack: "Merriweather", "Georgia", serif;
+	}
+	font-family: $font-stack;
+	font-size: $font-size;
+	font-weight: $font-weight;
+}
