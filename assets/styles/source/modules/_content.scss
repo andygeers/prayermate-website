@@ -61,3 +61,117 @@
 		float: left;
 	}
 }
+
+.awards-testimonials {
+    width: 45%;
+    float: left;
+    margin-left: 10%;
+    .christian-newmedia-awards {
+        display: block;
+        margin: 0 auto;
+    }
+    .testimonials-section {
+        margin-top: 20px;
+    }
+    .testimonial-quote {
+        font-family: Georgia, serif;
+        font-weight: bold;
+        font-size: 28px;
+        font-size: 2.8rem;
+    }
+    .testimonial-label {
+        text-align: center;
+        font-size: 18px;
+        font-size: 1.8rem;
+    }
+    .testimonial-image {
+        display: block;
+        margin: 20px auto 0;
+    }
+    .testimonial-name {
+        font-weight: bold;
+        padding-right: 10px;
+        margin-right: 5px;
+        border-right: solid thin $primary;
+    }
+}
+
+.prayermate-features {
+    background: #696969;
+    .fl-heading {
+        background: #000;
+        color: #939393;
+        font-family: merriweather, Georgia, serif;
+        font-size: 30px;
+        font-size: 3rem;
+        text-align: center;
+        padding: 7px 0;
+    }
+    .feature-list > ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 25px;
+    }
+    .feature-item {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: solid thin #868686;
+        position: relative;
+        width: 82%;
+        float: right;
+        &:before {
+            content: '';
+            background-image: url('assets/images/feature-list-icons.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            left: -185px;
+            top: 0;
+            height: 144px;
+        }
+        &.feature-intuitive:before {
+            background-position: 0 0;
+            width: 120px;
+        }
+        &.feature-tailored:before {
+            background-position: 0 -144px;
+            width: 130px;
+        }
+        &.feature-cofe:before {
+            background-position: 0 -288px;
+            width: 140px;
+        }
+        &.feature-download:before {
+            background-position: 0 -432px;
+            width: 143px;
+        }
+        &.feature-dropbox:before {
+            background-position: 0 -576px;
+            width: 145px;
+        }
+        &:after {
+            content: '';
+            background: url('assets/images/ios-android.png') 0 0 no-repeat;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 78px;
+            height: 43px;
+        }
+        .feature-heading {
+            color: $primary;
+            font-family: merriweather, Georgia, serif;
+            font-size: 30px;
+            font-size: 3rem;
+            font-weight: normal;
+        }
+        .feature-desc {
+            font-size: 21px;
+            font-size: 2.1rem;
+            font-weight: 300;
+            font-family: lato, Helvetica, serif;
+            color: #fff;
+            text-align: justify;
+            margin-top: 10px;
+        }
+    }
+}

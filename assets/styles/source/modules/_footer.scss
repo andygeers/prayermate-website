@@ -1,2 +1,51 @@
 /* =Footer
 ----------------------------------------------- */
+
+.site-footer {
+    background: #242424;
+    padding: 15px 0 0;
+    .l-constrained {
+        padding: 0;
+        list-style: none;
+    }
+    .footer-item {
+        border-right: solid thin #5a5a5a;
+        padding-right: 1.9%;
+        margin-right: 1.9%;
+        float: left;
+        width: 30%;
+        box-sizing: content-box;
+        &:last-child {
+            margin-right: 0;
+            border-right: 0;
+        }
+    }
+    .footer-heading {
+        color: $primary;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 18px;
+        font-size: 1.8rem;
+        font-family: Lato, Helvetica, sans-serif;
+    }
+    .footer-item-desc {
+        color: #808080;
+        text-align: justify;
+        font-size: 14px;
+        font-size: 1.4rem;
+        margin-top: 15px;
+    }
+    .copyright-details {
+        background: #000;
+        color: white;
+        text-align: center;
+        font-size: 12px;
+        font-size: 1.2rem;
+        padding: 10px 0;
+        margin-top: 30px;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
