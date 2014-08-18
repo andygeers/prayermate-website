@@ -8,118 +8,171 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes width=device-width">
 	<link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="js/script.js"></script>
-	<script src="js/respond.js"></script>
+	<script src="assets/js/script.min.js"></script>
 	<script type="text/javascript" src="//use.typekit.net/plx4xps.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                itemWidth: 460,
+                directionNav: false
+            });
+            $(".flexslider2").flexslider({
+                animation: "slide",
+                itemWidth: 202,
+                directionNav: false,
+                controlNav: false
+            });
+        });
+    </script>
     <!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
 
 <body>
-
-	<div class="container"> <!-- 1400 width -->
-
-		<header class="site-header">
-			<div class="l-constrained">
-				<img class="pm-logo" src="assets/images/prayermate-logo.png" alt="Prayermate" />
-				<ul class="nav">
-					<li class="nav__item"><a href="/about">About</a></li>
-					<li class="nav__item"><a href="/blog">Blog</a></li>
-				</ul>
-			</div>
-		</header>
-		
-		<section class="site-content">
-			<div class="hero-section">
-				<div class="l-constrained">
-					<img class="hero-img" src="assets/images/hero-img.jpg" />
-					<div class="right-column">
-						<h1 class="hero-title">Helping your pray for all the people you say you'll pray for.</h1>
-						<p class="hero-desc">Prayer is an amazing privilege, but it's also really hard work (the apostle Paul compares it to a wrestling match!) PrayerMate is a Christian prayer app that seeks to help you actually pray for all the people and causes you care about.</p>
-						<p class="hero-desc">PrayerMate is constantly evolving on a mission to help bring all of your prayer points together in one place. Whether its your personal prayer points for friends and family, regular updates from some fantastic mission organisations, or the latest PDF prayer letter that just arrived in your inbox, PrayerMate puts it all together in one place and helps you get on and pray.</p>
-						<div class="download-area">
-							<span class="cta-dl-label">Available <span class="uppercase">free</span> on iOS and Android</span>
-							<ul class="dl-links">
-								<li><a id="app-store-badge" href="http://itunes.apple.com/us/app/prayermate-quiet-time-organiser/id434815549?mt=8&ls=1"><img class="alignnone size-full wp-image-257" alt="app_store_badge" src="assets/images/app_store_badge.png" width="135" height="40"></a></li>
-								<li><a href="https://play.google.com/store/apps/details?id=net.geero.prayermate" class="google_play_badge"><img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png"></a></li>
-								<li><a href="http://www.amazon.com/Andy-Geers-PrayerMate-Christian-Prayer/dp/B00HPA2EUM/ref=sr_1_1?s=mobile-apps&ie=UTF&qid=1389085322&sr=1-1&keywords=prayermate" id="amazon_badge"><img alt="Get it on Amazon Appstore" src="assets/images/amazon_badge.png"></a></li>
-							</ul>
-					</div>
-					</div>
-				</div>
-				<div class="grey-bg">
-					<div class="l-constrained">
-						<img class="hand-iphone" src="assets/images/hand-iphone.png" />
-                        <div class="awards-testimonials">
-                            <img src="assets/images/awards-logos.png" alt="Runner Up - Christian New Media" class="christian-newmedia-awards" />
-                            <div class="testimonials-section">
+    <header class="site-header">
+        <div class="l-constrained">
+            <a href="/"><img class="pm-logo" src="assets/images/prayermate-logo.png" alt="Prayermate" /></a>
+            <ul class="nav">
+                <li class="nav__item"><a href="/about">About</a></li>
+                <li class="nav__item"><a href="/blog">Blog</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section class="site-content">
+        <div class="hero-section">
+            <div class="l-constrained">
+                <div class="left-column">
+                    <iframe width="560" height="315" src="//www.youtube.com/embed/RYu8RsVXcCE" frameborder="0" allowfullscreen class="hero-video"></iframe>
+                    <ul class="as-seen-in">
+                        <li><img src="assets/images/the_times.png" alt="The Times" class="media-img" /></li>
+                        <li><img src="assets/images/church_times.png" alt="Church Times" class="media-img" /></li>
+                        <li><img src="assets/images/christian_today.png" alt="Christian Today" class="media-img" /></li>
+                        <li><img src="assets/images/good_book_co.png" alt="The Good Book Company" class="media-img" /></li>
+                        <li><img src="assets/images/wsjd_logo.png" alt="The Wall Street Journal" class="media-img" /></li>
+                        <li><img src="assets/images/en1.png" alt="Evangelicals Now" class="media-img" /></li>
+                        <li><img src="assets/images/monergism.png" alt="Monergism" class="media-img" /></li>
+                    </ul>
+                </div>
+                <div class="right-column">
+                    <h1 class="hero-title">Helping you pray for all the people you say you'll pray for.</h1>
+                    <p class="hero-desc">Prayer is an amazing privilege, but it's also really hard work (the apostle Paul compares it to a wrestling match!) PrayerMate is a Christian prayer app that seeks to help you actually pray for all the people and causes you care about.</p>
+                    <p class="hero-desc">PrayerMate is constantly evolving on a mission to help bring all of your prayer points together in one place. Whether its your personal prayer points for friends and family, regular updates from some fantastic mission organisations, or the latest PDF prayer letter that just arrived in your inbox, PrayerMate puts it all together in one place and helps you get on and pray.</p>
+                    <div class="download-area">
+                        <span class="cta-dl-label">Available <span class="uppercase">free</span> on iOS and Android</span>
+                        <ul class="dl-links">
+                            <li><a id="app-store-badge" href="http://itunes.apple.com/us/app/prayermate-quiet-time-organiser/id434815549?mt=8&ls=1"><img class="alignnone size-full wp-image-257" alt="app_store_badge" src="assets/images/app_store_badge.png" width="135" height="40"></a></li>
+                            <li><a href="https://play.google.com/store/apps/details?id=net.geero.prayermate" class="google_play_badge"><img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png"></a></li>
+                            <li><a href="http://www.amazon.com/Andy-Geers-PrayerMate-Christian-Prayer/dp/B00HPA2EUM/ref=sr_1_1?s=mobile-apps&ie=UTF&qid=1389085322&sr=1-1&keywords=prayermate" id="amazon_badge"><img alt="Get it on Amazon Appstore" src="assets/images/amazon_badge.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grey-bg">
+            <div class="l-constrained">
+                <div class="screenshot-slider">
+                    <div class="flexslider2">
+                        <ul class="slides">
+                            <li><img class="screenshot-img" src="assets/images/screenshot1.png" alt="PrayerMate Screenshot" /></li>
+                            <li><img class="screenshot-img" src="assets/images/screenshot2.png" alt="PrayerMate Screenshot" /></li>
+                            <li><img class="screenshot-img" src="assets/images/screenshot3.png" alt="PrayerMate Screenshot" /></li>
+                            <li><img class="screenshot-img" src="assets/images/screenshot4.png" alt="PrayerMate Screenshot" /></li>
+                            <li><img class="screenshot-img" src="assets/images/screenshot5.png" alt="PrayerMate Screenshot" /></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="awards-testimonials">
+                    <img src="assets/images/awards-logos.png" alt="Runner Up - Christian New Media" class="christian-newmedia-awards" />
+                    <div class="testimonials-section flexslider">
+                        <ul class="slides">
+                            <li>
                                 <span class="testimonial-quote">"PrayerMate has ignited some freshness into my praying"</span>
+                                <img src="http://lorempixel.com/239/234/people/1" alt="Tim Challies" class="testimonial-image">
+                                <p class="testimonial-label">
+                                    <span class="testimonial-name">Adrian Reynolds</span>
+                                    <span class="testimonail-position">Proclamation Trust</span>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="testimonial-quote">"Remarkably helpful"</span>
                                 <img src="assets/images/tim-challies.png" alt="Tim Challies" class="testimonial-image">
                                 <p class="testimonial-label">
                                     <span class="testimonial-name">Tim Challies</span>
                                     <span class="testimonail-position">Pastor & Blogger</span>
                                 </p>
-                            </div>
-                        </div>
-					</div>
-				</div>
-                <div class="prayermate-features">
-                    <h2 class="fl-heading">
-                        <div class="l-constrained">
-                            Features
-                        </div>
-                    </h2>
-                    <div class="feature-list">
-                        <ul class="l-constrained">
-                            <li class="feature-item feature-intuitive">
-                                <h3 class="feature-heading">Intuitive Index Card Interface</h3>
-                                <p class="feature-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </li>
-                            <li class="feature-item feature-tailored">
-                                <h3 class="feature-heading">Tailored just for <span class="underline">You</span></h3>
-                                <p class="feature-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </li>
-                            <li class="feature-item feature-cofe">
-                                <h3 class="feature-heading">Church of England Collect for the Day</h3>
-                                <p class="feature-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </li>
-                            <li class="feature-item feature-download">
-                                <h3 class="feature-heading">Downloadable Prayer Gallery</h3>
-                                <p class="feature-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </li>
-                            <li class="feature-item feature-dropbox">
-                                <h3 class="feature-heading">Import / Export via DropBox</h3>
-                                <p class="feature-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </li>
                         </ul>
                     </div>
                 </div>
-			</div>
-		</section>
-        <footer class="site-footer">
-            <ul class="l-constrained">
-                <li class="footer-item">
-                    <h3 class="footer-heading">Latest News</h3>
-                    <p class="footer-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices consectetur pulvinar. Vivamus eleifend dui quis posuere bibendum. Sed porttitor tellus felis, id scelerisque massa scelerisque in. Duis interdum dui massa, malesuada hendrerit dui molestie non.</p>
-                </li>
-                <li class="footer-item">
-                    <h3 class="footer-heading">Contact Us</h3>
-                    <p class="footer-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices consectetur pulvinar. Vivamus eleifend dui quis posuere bibendum. Sed porttitor tellus felis, id scelerisque massa scelerisque in. Duis interdum dui massa, malesuada hendrerit dui molestie non.</p>
-                </li>
-                <li class="footer-item">
-                    <h3 class="footer-heading">Latest Testimonial</h3>
-                    <p class="footer-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices consectetur pulvinar. Vivamus eleifend dui quis posuere bibendum. Sed porttitor tellus felis, id scelerisque massa scelerisque in. Duis interdum dui massa, malesuada hendrerit dui molestie non.</p>
-                </li>
-            </ul>
-            <div class="copyright-details">
-                <div class="l-constrained">
-                    &copy; <a href="http://geero.net">Geero.net</a> 2014. All Rights Reserved.
-                </div>
             </div>
-        </footer>
-	</div>
+        </div>
+        <div class="prayermate-features">
+            <h2 class="fl-heading">
+                <div class="l-constrained">
+                    Features
+                </div>
+            </h2>
+            <div class="feature-list">
+                <ul class="l-constrained">
+                    <li class="feature-item feature-intuitive">
+                        <div class="item-container">
+                            <h3 class="feature-heading">Intuitive Index Card Interface</h3>
+                            <p class="feature-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </li>
+                    <li class="feature-item feature-tailored">
+                        <div class="item-container">
+                            <h3 class="feature-heading">Tailored just for <span class="underline">You</span></h3>
+                            <p class="feature-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </li>
+                    <li class="feature-item feature-cofe">
+                        <div class="item-container">
+                            <h3 class="feature-heading">Church of England Collect for the Day</h3>
+                            <p class="feature-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </li>
+                    <li class="feature-item feature-download">
+                        <div class="item-container">
+                            <h3 class="feature-heading">Downloadable Prayer Gallery</h3>
+                            <p class="feature-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </li>
+                    <li class="feature-item feature-dropbox">
+                        <div class="item-container">
+                            <h3 class="feature-heading">Import / Export via DropBox</h3>
+                            <p class="feature-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <ul class="l-constrained">
+            <li class="footer-item">
+                <h3 class="footer-heading">Latest News</h3>
+                <p class="footer-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices consectetur pulvinar. Vivamus eleifend dui quis posuere bibendum. Sed porttitor tellus felis, id scelerisque massa scelerisque in. Duis interdum dui massa, malesuada hendrerit dui molestie non.</p>
+            </li>
+            <li class="footer-item">
+                <h3 class="footer-heading">Contact Us</h3>
+                <p class="footer-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices consectetur pulvinar. Vivamus eleifend dui quis posuere bibendum. Sed porttitor tellus felis, id scelerisque massa scelerisque in. Duis interdum dui massa, malesuada hendrerit dui molestie non.</p>
+            </li>
+            <li class="footer-item">
+                <h3 class="footer-heading">Latest Testimonial</h3>
+                <p class="footer-item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices consectetur pulvinar. Vivamus eleifend dui quis posuere bibendum. Sed porttitor tellus felis, id scelerisque massa scelerisque in. Duis interdum dui massa, malesuada hendrerit dui molestie non.</p>
+            </li>
+        </ul>
+        <div class="copyright-details">
+            <div class="l-constrained">
+                &copy; <a href="http://geero.net">Geero.net</a> 2014. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

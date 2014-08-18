@@ -4,17 +4,14 @@
 .site-header {
 	background: url(../assets/images/header-bg.png);
 	background-image: linear-gradient(to right, #FFC662 0%, #FFA400 30%);
-	height: 233px;
 	.l-constrained {
 		position: relative;
 		overflow: auto;
 		height: 100%;
 	}
 	.pm-logo {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		padding: 0 5%;
+        position: relative;
+        bottom: -6px;
 		@media screen and (min-width: 1024px) {
 			padding: 0;
 		}
@@ -23,7 +20,7 @@
 		margin: 0;
 		padding: 0;
 		list-style: none;
-		width: 128px;
+		width: 147px;
 		line-height: 2;
 		position: absolute;
 		bottom: 0;
@@ -36,17 +33,21 @@
 	}
 	.nav__item {
 		float: left;
-		margin-left: 12px;
 		&:first-child {
 			border-right: solid 1px white;
-			padding-right: 12px;
-			margin-left: 0;
 		}
 		a {
+            display: inline-block;
+            padding: 0 12px;
 			color: white;
 			text-decoration: none;
 			text-transform: uppercase;
-			@include font(Lato, 1.6rem, 100)
+			@include font(Lato, 1.6rem, 100);
+            transition: all 0.2s ease;
+            &:hover {
+                background: white;
+                color: #ffa400;
+            }
 		}
 	}
 }

@@ -7,14 +7,22 @@
 
 .hero-section {
 	overflow: auto;
-	.hero-img {
-		float: left;
-	}
+    .left-column {
+        text-align: center;
+        @media screen and (min-width: 900px) {
+            float: left;
+            width: 560px;
+        }
+    }
 	.right-column {
-		float: left;
-		clear: right;
-		width: 53%;
-		margin-left: 8%;
+        margin-top: 20px;
+        @media screen and (min-width: 900px) {
+            float: left;
+            clear: right;
+            width: 45.3125%;
+            width: calc(95% - 560px);
+            margin: 0 0 0 5%;
+        }
 	}
 	.hero-title {
 		@include font("Merriweather", 3rem, normal);
@@ -25,9 +33,11 @@
 		text-align: justify;
 		width: 95%;
 	}
+    .hero-video {
+        max-width: 100%;
+    }
 	.cta-dl-label {
 		@include font("Lato", 2rem, normal);
-		
 	}
 }
 
@@ -43,9 +53,10 @@
 		margin: 10px 0 0;
 		padding: 0;
 		list-style: none;
+        text-align: center;
 		li {
-			float: left;
-			margin-left: 5%;
+		    display: inline-block;
+			margin-left: 3.5%;
 			&:first-child {
 				margin-left: 0;
 			}
@@ -53,31 +64,88 @@
 	}
 }
 
+.as-seen-in {
+    list-style: none;
+    padding: 30px 0 0;
+    margin: 0;
+    overflow: auto;
+    width: 100%;
+    text-align:center;
+    li {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 20px 0 0 6%;
+        &:nth-child(2n-1) {
+            margin-left: 0;
+        }
+    }
+    .media-img {
+        opacity: 0.7;
+    }
+}
+
 .grey-bg {
 	margin-top: 70px;
-	padding-top: 100px;
+	padding-top: 30px;
 	background: #ececec;
-	.hand-iphone {
-		float: left;
+	.screenshot-slider {
+        position: relative;
+        width: 238px;
+        height: 506px;
+        margin: 0 auto;
+        background-image: url(assets/images/iphone.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+        @media screen and (min-width: 580px) {
+            display: inline-block;
+            margin: 0;
+        }
+        @media screen and (min-width: 840px) {
+            background-image: url(assets/images/hand-iphone.png);
+            width: 460px;
+            bottom: -6px;
+        }
+        .flexslider2 {
+            width: 202px;
+            position: absolute;
+            left: 19px;
+            top: 73px;
+            @media screen and (min-width: 840px) {
+                left: 204px;
+            }
+        }
 	}
 }
 
 .awards-testimonials {
-    width: 45%;
-    float: left;
-    margin-left: 10%;
+    width: 100%;
+    vertical-align:top;
+    margin: 50px 0;
+    @media screen and (min-width: 580px) {
+        display: inline-block;
+        width: calc(90% - 238px);
+        margin: 0 0 0 9%;
+    }
+    @media screen and (min-width: 840px) {
+        width: calc(90% - 460px);
+        vertical-align: bottom;
+    }
     .christian-newmedia-awards {
         display: block;
         margin: 0 auto;
     }
     .testimonials-section {
         margin-top: 20px;
+        width: 100%;
     }
     .testimonial-quote {
-        font-family: Georgia, serif;
+        font-family: merriweather, Georgia, serif;
         font-weight: bold;
         font-size: 28px;
         font-size: 2.8rem;
+        display: block;
+        text-align: center;
     }
     .testimonial-label {
         text-align: center;
@@ -86,7 +154,9 @@
     }
     .testimonial-image {
         display: block;
+        max-width: 240px;
         margin: 20px auto 0;
+        border-radius: 100%;
     }
     .testimonial-name {
         font-weight: bold;
@@ -109,7 +179,6 @@
     }
     .feature-list > ul {
         list-style: none;
-        padding: 0;
         margin-top: 25px;
     }
     .feature-item {
@@ -117,16 +186,19 @@
         margin-bottom: 15px;
         border-bottom: solid thin #868686;
         position: relative;
-        width: 82%;
-        float: right;
+        overflow: auto;
         &:before {
             content: '';
             background-image: url('assets/images/feature-list-icons.png');
             background-repeat: no-repeat;
             position: absolute;
-            left: -185px;
+            left: 0;
             top: 0;
             height: 144px;
+            display: none;
+            @media screen and (min-width: 540px) {
+                display: inline-block;
+            }
         }
         &.feature-intuitive:before {
             background-position: 0 0;
@@ -157,12 +229,23 @@
             width: 78px;
             height: 43px;
         }
+        .item-container {
+            @media screen and (min-width: 540px) {
+                width: 82%;
+                width: calc(98% - 145px);
+                float: right;
+                margin-left: 2%;
+            }
+        }
         .feature-heading {
             color: $primary;
             font-family: merriweather, Georgia, serif;
             font-size: 30px;
             font-size: 3rem;
             font-weight: normal;
+            width: calc(97% - 78px);
+            margin-right: 3%;
+            display: inline-block;
         }
         .feature-desc {
             font-size: 21px;
