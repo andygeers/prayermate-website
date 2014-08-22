@@ -4,6 +4,7 @@
 .site-header {
 	background: url(../assets/images/header-bg.png);
 	background-image: linear-gradient(to right, #FFC662 0%, #FFA400 30%);
+    overflow: hidden;
 	.l-constrained {
 		position: relative;
 		overflow: auto;
@@ -20,7 +21,7 @@
 		margin: 0;
 		padding: 0;
 		list-style: none;
-		width: 147px;
+		width: 150px;
 		line-height: 2;
 		position: absolute;
 		bottom: 0;

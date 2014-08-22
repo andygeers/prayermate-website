@@ -7,11 +7,25 @@
 
 .hero-section {
 	overflow: auto;
+    @media screen and (max-width: 900px) {
+        .l-constrained {
+            display: flex;
+            flex-direction: column;
+        }
+        .left-column {
+            order: 2;
+        }
+        .right-column {
+            order: 1;
+        }
+    }
     .left-column {
         text-align: center;
+        margin-top: 50px;
         @media screen and (min-width: 900px) {
             float: left;
             width: 560px;
+            margin: 0;
         }
     }
 	.right-column {
@@ -38,6 +52,7 @@
     }
 	.cta-dl-label {
 		@include font("Lato", 2rem, normal);
+        text-align: center;
 	}
 }
 
