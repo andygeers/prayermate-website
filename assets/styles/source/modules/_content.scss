@@ -285,38 +285,51 @@
             }
         }
     }
-}
 
-.feature-intuitive .feature-desc-container:after {
-    background-image: url('http://www.geero.net/images/prayermate_screenshots/feature_index_cards.png');
-}
-.feature-tailored .feature-desc-container:after {
-    background-image: url('http://www.geero.net/images/prayermate_screenshots/feature_tailored.png');
-}
-.feature-feeds .feature-desc-container:after {
-    background-image: url('http://www.geero.net/wp-content/uploads/feature_lcm.png');
-}
-.feature-operation-world .feature-desc-container:after {
-    background-image: url('http://www.geero.net/wp-content/uploads/ow_feature.png');
-}
-.feature-cofe .feature-desc-container:after {
-    background-image: url('http://www.geero.net/wp-content/uploads/collect_for_the_day_feature.png');
-}
-.feature-download .feature-desc-container:after {
-    background-image: url('http://www.geero.net/wp-content/uploads/gallery_feature.png');
-}
-.feature-attachments .feature-desc-container:after {
-    background-image: url('http://www.geero.net/images/prayermate_screenshots/feature_attachments.png');
-}
-.feature-contacts .feature-desc-container:after {
-    background-image: url('http://www.geero.net/images/prayermate_screenshots/feature_address_book.png');
-}
-.feature-dropbox .feature-desc-container:after {
-    background-image: url('http://www.geero.net/images/prayermate_screenshots/feature_dropbox.png');
-}
-.feature-alarms .feature-desc-container:after {
-    background-image: url('http://www.geero.net/images/prayermate_screenshots/feature_alarm.png');
-}
-.feature-pin .feature-desc-container:after {
-    background-image: url('http://www.geero.net/images/prayermate_screenshots/feature_passcode.png');
+    .feature-intuitive .feature-desc-container:after {
+        background-image: url('http://www.geero.net/images/prayermate_screenshots/feature_index_cards.png');
+    }
+    .feature-tailored .feature-desc-container:after {
+        background-image: url('http://www.geero.net/images/prayermate_screenshots/feature_tailored.png');
+    }
+    .feature-feeds .feature-desc-container:after {
+        background-image: url('http://www.geero.net/wp-content/uploads/feature_lcm.png');
+    }
+    .feature-operation-world .feature-desc-container:after {
+        background-image: url('http://www.geero.net/wp-content/uploads/ow_feature.png');
+    }
+    .feature-cofe .feature-desc-container:after {
+        background-image: url('http://www.geero.net/wp-content/uploads/collect_for_the_day_feature.png');
+    }
+    .feature-download .feature-desc-container:after {
+        background-image: url('http://www.geero.net/wp-content/uploads/gallery_feature.png');
+    }
+    .feature-attachments .feature-desc-container:after {
+        background-image: url('http://www.geero.net/images/prayermate_screenshots/feature_attachments.png');
+    }
+    .feature-contacts {
+        .feature-desc-container:after {
+            background-image: url('http://www.geero.net/images/prayermate_screenshots/feature_address_book.png');
+        }
+        &:after {
+            width: 38px;
+            margin-right: 38px;
+        }
+    }
+    .feature-dropbox .feature-desc-container:after {
+        background-image: url('http://www.geero.net/images/prayermate_screenshots/feature_dropbox.png');
+    }
+    .feature-alarms .feature-desc-container:after {
+        background-image: url('http://www.geero.net/images/prayermate_screenshots/feature_alarm.png');
+    }
+    .feature-pin {
+        .feature-desc-container:after {
+            background-image: url('http://www.geero.net/images/prayermate_screenshots/feature_passcode.png');
+        }
+        &:after {
+            width: 38px;
+            margin-right: 38px;
+        }
+    }
+
 }
