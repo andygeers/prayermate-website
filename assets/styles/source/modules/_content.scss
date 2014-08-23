@@ -218,6 +218,7 @@
         border-bottom: solid thin #868686;
         position: relative;
         overflow: auto;
+        min-height: 150px;
         &:before {
             content: '';
             background-image: url('assets/images/feature-list-icons.png');
@@ -286,6 +287,10 @@
             color: #fff;
             text-align: justify;
             margin-top: 10px;
+
+            a {
+                color: $primary;
+            }
         }
     }
 }
