@@ -14,7 +14,7 @@
         border: solid #5a5a5a;
         border-width: 0 0 1px;
         @media screen and (min-width: 520px) {
-            border-width: 0 1px 0 0;   
+            border-width: 0 1px 0 0;
             padding-right: 1.9%;
             margin: 0 1.9% 0 0;
             float: left;
@@ -23,6 +23,23 @@
         &:last-child {
             margin-right: 0;
             border-right: 0;
+        }
+
+        a {
+            color: white;
+
+            &:link, &:visited {
+                text-decoration: none;
+            }
+            &:active, &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        li {
+            color: #808080;
+            font-size: 14px;
+            font-size: 1.4rem;
         }
     }
     .footer-heading {
