@@ -161,6 +161,14 @@
         font-size: 2.8rem;
         display: block;
         text-align: center;
+
+        a:link, a:visited {
+            color: black;
+            text-decoration: none;
+        }
+        a:hover, a:active {
+            text-decoration: underline;
+        }
     }
     .testimonial-label {
         text-align: center;
@@ -169,7 +177,7 @@
     }
     .testimonial-image {
         display: block;
-        max-width: 240px;
+        max-width: 180px;
         margin: 20px auto 0;
         border-radius: 100%;
     }
@@ -178,6 +186,14 @@
         padding-right: 10px;
         margin-right: 5px;
         border-right: solid thin $primary;
+
+        a:link, a:visited {
+            color: black;
+            text-decoration: none;
+        }
+        a:hover, a:active {
+            text-decoration: underline;
+        }
     }
 }
 
